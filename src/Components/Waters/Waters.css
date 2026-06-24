@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f4fbff;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Hero */
+.hero{
+    background:
+    linear-gradient(rgba(0,70,110,0.75), rgba(0,140,180,0.75)),
+    url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+}
+
+/* Container */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 0;
+}
+
+/* Section Title */
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    color:#005f8f;
+    font-size:2.2rem;
+}
+
+/* Water Types Grid */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* Water type colors */
+.pure{
+    border-top:6px solid #00b4d8;
+}
+
+.mineral{
+    border-top:6px solid #2a9d8f;
+}
+
+.alkaline{
+    border-top:6px solid #4361ee;
+}
+
+.iodine{
+    border-top:6px solid #f77f00;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#003b5c;
+}
+
+/* Bottle Caps Section */
+.caps-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.cap{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    text-align:center;
+}
+
+.cap-circle{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin:0 auto 15px;
+}
+
+/* Cap Colors */
+.blue{ background:#1e90ff; }
+.green{ background:#2ecc71; }
+.red{ background:#e74c3c; }
+.yellow{ background:#f1c40f; }
+
+.cap h3{
+    margin-bottom:10px;
+    color:#003b5c;
+}
+
+/* Seasonal Section */
+.season{
+    background:#eaf7ff;
+    padding:70px 0;
+}
+
+.season-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.season-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.season-card h3{
+    color:#0077b6;
+    margin-bottom:10px;
+}
+
+/* Footer */
+.footer{
+    background:#003b5c;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .hero h1{
+        font-size:2rem;
+    }
+}

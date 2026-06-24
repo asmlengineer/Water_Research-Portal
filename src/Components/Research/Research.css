@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5fbff;
+    color:#333;
+    line-height:1.7;
+}
+
+/* Hero Section */
+.hero{
+    height:55vh;
+    background:
+    linear-gradient(rgba(0,60,90,.65),rgba(0,60,90,.65)),
+    url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero-content h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.1rem;
+}
+
+/* Container */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 0;
+}
+
+/* Section Title */
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    color:#005f8f;
+    font-size:2.2rem;
+}
+
+.section-title p{
+    color:#666;
+}
+
+/* Research Cards */
+.research-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.date{
+    color:#0077b6;
+    font-size:14px;
+    font-weight:600;
+}
+
+.card h3{
+    margin:12px 0;
+    color:#003b5c;
+}
+
+.card p{
+    color:#555;
+    font-size:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#0077b6;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#005f8f;
+}
+
+/* Statistics */
+.stats{
+    background:#eaf7fd;
+    padding:60px 20px;
+    margin-top:60px;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    text-align:center;
+}
+
+.stat-box h2{
+    color:#0077b6;
+    font-size:2.5rem;
+}
+
+.stat-box p{
+    color:#444;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .hero-content h1{
+        font-size:2rem;
+}
+}
