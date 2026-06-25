@@ -1,4 +1,5 @@
 import './Header.css';
+
 const Header =({activehome, activeResearch, activeWater, activePH, activeAbout, activeContact}) => {
     return(
         <>
@@ -6,7 +7,7 @@ const Header =({activehome, activeResearch, activeWater, activePH, activeAbout, 
                 <a href="#" className="logo">
                     <div className="logo-icon">💧</div>
                     <div className="logo-text">
-                        <h2>Water Research Portal</h2>
+                        <h2>H<sub>2</sub>O Tech Hub  </h2>
                         <span>Knowledge • Innovation • Sustainability</span>
                     </div>
                 </a>
