@@ -1,13 +1,7 @@
 import { useState } from 'react';
 import './Contact.css';
-import emailjs from '@emailjs/browser';
 function Contact(){
-   const [result, setResult] = useState({
-        name:'',
-        email:'',
-        text:'',
-        textarea:'',
-   });
+   const [result, setResult] = useState();
       const onSubmit = async (event) => {
 
         alert('Form Submitted SuccessFully')
